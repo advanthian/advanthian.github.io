@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="/assets/main.css" rel="stylesheet">
+	</head>
+	<body class="rows light-bgcol">
+		<header class="header row columns">
+			<a href="{% link index.html %}" class="margin">
+				<img src="/assets/logo.png" />
+			</a>
+			{% include navigation.html %}
+		</header>
+		{{ content }}
+		<footer class="footer row columns">
+			{%- comment -%}
+			<ul class="margin column plain-list">
+			</ul>
+			<ul class="margin column plain-list">
+			</ul>
+			<ul class="margin column plain-list">
+			</ul>
+			{%- endcomment -%}
+		</footer>
+	</body>
+</html>

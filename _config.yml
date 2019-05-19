@@ -1,0 +1,32 @@
+title: Advanthian
+description: |
+  We simplify the technical allowing you to focus on what really matters!
+
+excerpt_separator: <!-- more -->
+
+markdown: kramdown
+kramdown:
+  smart_quotes:
+    - apos
+    - apos
+    - quot
+    - quot
+  typographic_symbols:
+    hellip: '...'
+    mdash: '-'
+    ndash: '-'
+    laquo: '<<'
+    raquo: '>>'
+
+  parse_block_html: true
+  parse_span_html: true
+
+defaults:
+  - scope:
+      path: _posts
+    values:
+      layout: post
+  - scope:
+      path: _drafts
+    values:
+      layout: post

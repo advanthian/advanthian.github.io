@@ -1,0 +1,173 @@
+$padding-default: 1em;
+$margin-default: $padding-default;
+
+$bgcol-dark: #191919;
+$bgcol-light: #F8F8F8;
+$highlightcol: #940000;
+
+
+* { box-sizing: border-box; }
+
+body {
+	margin: 0px 10vw;
+
+	font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
+a {
+	color: #002360;
+}
+
+.button, input[type="button"], button {
+	padding: $padding-default $padding-default * 2;
+
+	font-size: inherit;
+	font-family: inherit;
+
+	cursor: pointer;
+	color: $bgcol-light;
+	background-color: $highlightcol;
+
+	border: 0px;
+
+	&:hover { border: 0px; }
+}
+
+blockquote {
+	padding: $padding-default;
+
+	border-left: 4px solid $highlightcol;
+
+	cite {
+		margin: $margin-default;
+
+		color: #777;
+
+		&::before {
+			content: " - ";
+		}
+	}
+}
+
+.margin {
+	margin: $margin-default;
+}
+
+.margin-bottom {
+	margin-bottom: $margin-default;
+}
+
+.padding {
+	padding: $padding-default;
+}
+
+.rows {
+	display: flex;
+	flex-direction: column;
+}
+
+.rows-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.row {
+	flex: 1 1;
+}
+
+.columns {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	flex: 1 1;
+}
+
+.header {
+	align-items: center;
+
+	max-height: 150px;
+
+	overflow: hidden;
+
+	border-bottom: 3px solid $bgcol-dark;
+}
+
+.menu {
+	margin-left: 5vw;
+	transform: rotate(58deg);
+}
+
+.menu-item {
+	width: 215px;
+
+	color: $bgcol-light;
+	background-color: $bgcol-dark;
+
+	text-decoration: none;
+	text-align: center;
+
+	border-top: 1px solid $bgcol-light;
+
+	transition: 0.1s background-color, 0.1s padding;
+
+	&:hover {
+		padding-left: $padding-default * 2;
+
+		background-color: #313131;
+	}
+
+	&.active {
+		color: #313131;
+		background-color: $bgcol-light;
+
+		&:first-child { border-bottom: 1px #313131 solid; }
+		&:last-child { border-top: 1px #313131 solid; }
+	}
+
+	&:nth-child(2) { margin-left: 32px; }
+	&:nth-child(3) { margin-left: 64px; }
+	&:nth-child(4) { margin-left: 96px; }
+	&:nth-child(5) { margin-left: 128px; }
+	&:nth-child(6) { margin-left: 160px; }
+	&:nth-child(7) { margin-left: 192px; }
+	&:nth-child(8) { margin-left: 224px; }
+	&:nth-child(9) { margin-left: 256px; }
+
+}
+
+.footer {
+	min-height: 20vh;
+
+	border-top: 3px solid $bgcol-dark;
+}
+
+.light-bgcol {
+	background-color: $bgcol-light;
+}
+
+.dark-bgcol {
+	background-color: $bgcol-dark;
+}
+
+.plain-list {
+	list-style: none;
+	padding: 0px;
+}
+
+.center {
+	text-align: center;
+}
+
+.highlight {
+	color: $highlightcol;
+}
+
+.outline {
+	box-shadow: 0px 0px 3px 2px #AAA;
+}

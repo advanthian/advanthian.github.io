@@ -1,0 +1,6 @@
+{%- assign menu_items = site.pages | where_exp:"page", "page.menu_order" | sort:"menu_order" %}
+<nav class="menu rows-reverse">
+	{% for menu_item in menu_items %}
+		<a href="{{ menu_item.url }}" class="menu-item {% if menu_item.url == page.url %}active {% endif %}padding">{{ menu_item.title }}</a>
+	{% endfor %}
+</nav>

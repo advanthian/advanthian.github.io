@@ -1,0 +1,67 @@
+.hero-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 50vh;
+
+	text-align: center;
+
+	& > * {
+		padding: $padding-default $padding-default * 2;
+		background-color: rgba($bgcol-light, 0.8);
+	}
+
+	& > h1 {
+		padding: 0.5em 2em;
+
+		border-bottom: 4px solid $highlightcol;
+	}
+
+	& > p {
+		max-width: 75%;
+	}
+}
+
+.hero-text-image {
+	margin-top: $margin-default * 2;
+	margin-bottom: $margin-default * 2;
+
+	justify-content: space-around;
+
+	& > img {
+		align-self: center;
+	}
+
+	& > :first-child {
+		max-width: 38vw;
+	}
+}
+
+.hero-image-text {
+	margin-top: $margin-default * 2;
+	margin-bottom: $margin-default * 2;
+
+	justify-content: space-around;
+
+	& > img {
+		align-self: center;
+	}
+
+	& > :last-child {
+		max-width: 38vw;
+	}
+}
+
+.code-bgimg {
+	background: fixed url('/assets/code.jpg') center / cover;
+}
+
+.training-bgimg {
+	background: fixed url('/assets/training.jpg') center / cover;
+}
+
+.speaking-bgimg {
+	background: fixed url('/assets/speaking.jpg') center / cover;
+}

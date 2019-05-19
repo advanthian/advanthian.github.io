@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Advanthian - {{ page.contact }}</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style type="text/css">
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: start;
+
+				min-height: 100vh;
+
+				margin: 0px;
+
+				background-color: #181818;
+				font-family: Roboto, sans-serif;
+			}
+
+			a {
+				color: #002360;
+				text-decoration: none;
+				border-bottom: 1px solid #ADC7F3;
+
+				transition: 1s border;
+			}
+
+			a:hover {
+				border-bottom: 1px solid #002360;
+			}
+
+			hr {
+				border: 1px solid #AAA;
+				border-width: 1px 0px 0px 0px;
+			}
+
+			#card {
+				width: 400px;
+				margin-top: 10vh;
+				padding: 1.5em;
+
+				border-radius: 2px;
+
+				background-color: #EEE;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+			}
+
+			#card > p:last-child {
+				margin-bottom: 0px;
+			}
+
+			.columns {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.right {
+				flex: 1 1;
+				text-align: right;
+			}
+
+			.center {
+				text-align: center;
+			}
+
+			.fade {
+				color: #AAA;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="card">
+			<div class="columns">
+				<div class="left">
+					<img src="/assets/logo.png" />
+				</div>
+				<div class="right">
+					<p><span class="fade">Name:</span> {{ page.contact }}</p>
+					<p>
+						<span class="fade">Email:</span>
+						<a href="mailto:{{ page.email }}"> {{ page.email }}</a>
+					</p>
+					<p>
+						<span class="fade">Website:</span>
+						<a href="https://{{ page.website }}"> {{ page.website }}</a>
+					</p>
+				</div>
+			</div>
+			<p class="center">
+				Consulting &bull; Training &bull; Speaking
+			</p>
+		</div>
+	</body>
+</html>
