@@ -8,6 +8,6 @@ scripts:
   - /assets/contact_form.js
 ---
 
-THis is some text to go before teh contact form.
+Please do get in touch with any enquiries that you may have.
 
 {% include contact_form.html %}
