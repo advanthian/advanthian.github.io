@@ -34,7 +34,7 @@ var ContactFormState = {
 
 		m.request({
 			'method': 'POST',
-			'url': 'https://formspree.io/xlewgjyd',
+			'url': 'https://formspree.io/f/xlewgjyd',
 			'headers': {
 				'Accept': 'application/json'
 			},
